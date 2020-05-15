@@ -16,7 +16,7 @@ struct ContentView: View {
     
         TabView(selection: $selection) {
             HomeView()
-                .padding(.bottom)
+                 
                 .tabItem {
                     if selection == 0 {
                         Image(systemName: "house.fill")

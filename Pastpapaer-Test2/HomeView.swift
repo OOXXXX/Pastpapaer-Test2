@@ -25,10 +25,15 @@ struct HomeView: View {
                 TestView3()
             }
             
+             
             
-            
-            SwitchView(selected: self.$selected)
-            
+            VStack {
+                Text(" ")
+                
+                Spacer()
+                SwitchView(selected: self.$selected)
+                .padding(.bottom, 10)
+            }
         }
 
     }
@@ -45,21 +50,30 @@ struct SwitchView: View {
     
     var body: some View {
                ZStack {
-                   
-               
+                
                 Rectangle()
-                .foregroundColor((Color(#colorLiteral(red: 0.7254901961, green: 0.7254901961, blue: 0.7254901961, alpha: 1))))
+                
+                .foregroundColor((Color(#colorLiteral(red: 0.9411764706, green: 0.937254902, blue: 0.937254902, alpha: 0.95))))
+                    
+                .frame(width: 240, height: 41)
+                
+                //.blur(radius: 15, opaque: false)
+                    .blendMode(.sourceAtop)
+                    
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+                
+               
+                
+                Rectangle()
+                .foregroundColor((Color(#colorLiteral(red: 0.7960784314, green: 0.7960784314, blue: 0.7960784314, alpha: 1))))
                 .frame(width: 80, height: 33)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
                 .offset(x: self.selected == 0 ? -75 : 0, y: 0)
                 .offset(x: self.selected == 1 ? 0 : 0, y: 0)
                 .offset(x: self.selected == 2 ? 75 : 0, y: 0)
-                .animation(Animation.easeInOut(duration: 0.3))
+                .animation(Animation.easeInOut(duration: 0.2))
                 
-                Rectangle()
-                .foregroundColor((Color(#colorLiteral(red: 0.8470588235, green: 0.8470588235, blue: 0.8470588235, alpha: 0.2956710188))))
-                .frame(width: 240, height: 41)
-                .clipShape(RoundedRectangle(cornerRadius: 16))
+                
                    
                    Group {
                        HStack {
