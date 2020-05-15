@@ -1,21 +1,21 @@
 //
-//  TestView2.swift
+//  TestView1.swift
 //  Pastpapaer-Test2
 //
-//  Created by Rhapsody on 2020/5/14.
+//  Created by Rhapsody on 2020/5/15.
 //  Copyright © 2020 Rhapsody. All rights reserved.
 //
 
 import SwiftUI
 
-struct TestView2: View {
+struct TestView1: View {
     var body: some View {
-        Text("View2")
+        Text("View1")
     }
 }
 
-struct TestView2_Previews: PreviewProvider {
+struct TestView1_Previews: PreviewProvider {
     static var previews: some View {
-        TestView2()
+        TestView1()
     }
 }
