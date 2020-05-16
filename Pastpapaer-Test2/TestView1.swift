@@ -9,28 +9,32 @@
 import SwiftUI
 
 struct TestView1: View {
+@State var showSheet = false
 var body: some View {
         
     NavigationView {
         ScrollView(.vertical, showsIndicators: false) {
             VStack{
-                    
-                ForEach(0 ..< 7) { item in
+           
+                NavigationLink(destination: TestView4(), isActive: self.$showSheet){
+                 
                     Button("Sheet") {
-                
-                     }
                         
+                        self.showSheet = true
+                     }
+                    
                     .buttonStyle(YearRoundedButton())
                     .padding(.top)
                     .navigationBarTitle("Olevel")
                     
+                     
                 }
                 Spacer()
             }
         .frame(width: screen.width)
         }
-       
-      }
+    }
+      
     }
 }
 

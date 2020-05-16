@@ -54,12 +54,8 @@ struct SwitchView: View {
                 Rectangle()
                 
                 .foregroundColor((Color(#colorLiteral(red: 0.9411764706, green: 0.937254902, blue: 0.937254902, alpha: 0.95))))
-                    
                 .frame(width: 240, height: 41)
-                
-                //.blur(radius: 15, opaque: false)
-                    .blendMode(.sourceAtop)
-                    
+                .blendMode(.sourceAtop)                    
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 
                

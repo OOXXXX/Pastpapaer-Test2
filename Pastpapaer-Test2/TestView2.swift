@@ -9,8 +9,27 @@
 import SwiftUI
 
 struct TestView2: View {
+    @State private var showModally = false
+    @State private var showSheet = false
+
     var body: some View {
-        Text("View2")
+        Form {
+            Toggle(isOn: self.$showModally) {
+                Text("Modal")
+            }
+            Button(action: { self.showSheet = true}) {
+                Text("Show sheet")
+            }
+        }
+        .sheet(isPresented: $showSheet) {
+            Form {
+                Button(action: { self.showSheet = false }) {
+                    Text("Hide me")
+                }
+                
+            }
+         
+        }
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18217214247039EF00032310 /* TestView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18217213247039EF00032310 /* TestView4.swift */; };
 		18785797246EDC010088A394 /* TestView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18785796246EDC010088A394 /* TestView1.swift */; };
 		18785799246EE67C0088A394 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18785798246EE67C0088A394 /* ContentView.swift */; };
 		18B833C0246ACAC500C4FD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B833BF246ACAC500C4FD22 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18217213247039EF00032310 /* TestView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView4.swift; sourceTree = "<group>"; };
 		18785796246EDC010088A394 /* TestView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView1.swift; sourceTree = "<group>"; };
 		18785798246EE67C0088A394 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18B833BC246ACAC500C4FD22 /* Pastpapaer-Test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pastpapaer-Test2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 				18B833BF246ACAC500C4FD22 /* AppDelegate.swift */,
 				18B833C1246ACAC500C4FD22 /* SceneDelegate.swift */,
 				18FFE9DC246D85F300FC1DB7 /* TestView3.swift */,
+				18217213247039EF00032310 /* TestView4.swift */,
 				18FFE9DE246D860F00FC1DB7 /* TestView2.swift */,
 				18785796246EDC010088A394 /* TestView1.swift */,
 				18FFE9E0246D861900FC1DB7 /* HomeView.swift */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18785797246EDC010088A394 /* TestView1.swift in Sources */,
+				18217214247039EF00032310 /* TestView4.swift in Sources */,
 				18FFE9DD246D85F300FC1DB7 /* TestView3.swift in Sources */,
 				18785799246EE67C0088A394 /* ContentView.swift in Sources */,
 				18B833C0246ACAC500C4FD22 /* AppDelegate.swift in Sources */,
